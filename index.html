@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap уроки</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+
+
+<body> 
+ <!-- Классы navbar и navbar-default (базовые классы меню)--> 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <!-- Контейнер (определяет ширину Navbar) -->
+  <div class="container-fluid">
+    <!-- Заголовок -->
+    <div class="navbar-header">
+      <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar)--> 
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Бренд или название сайта (отображается в левой части меню)--> 
+      <a class="navbar-brand" href="#">IShkinder</a>
+    </div>
+    <!-- Основная часть меню (может содержать ссылки, формы и другие элементы)-->
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Our products</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Login">
+                    <input type="text" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+              </li>
+            </ul>
+          </li>
+      </ul>
+
+      <!-- Содержимое основной части-->
+    </div>
+  </div>
+</nav>
+
+
+ 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
